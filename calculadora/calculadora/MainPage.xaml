@@ -3,20 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="calculadora.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+    <StackLayout Margin="10">
+        <Frame BackgroundColor="#1B4F72" Padding="24" CornerRadius="0">
             <Label Text="Calculadora" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-       <Label Text="Número 1" FontSize="Title" Padding="30,10,30,10"/>
+       <Label Text="Número 1" FontSize="18"  TextColor="Black"/>
         <Entry x:Name="txtNum1" Placeholder="Ingrese un número"
-               Keyboard="Numeric"></Entry>
-        <Label Text="Número 2" FontSize="16" Padding="30,0,30,0"/>
+               Keyboard="Numeric" />
+        
+        <Label Text="Número 2" FontSize="18" TextColor="Black"/>
         <Entry x:Name="txtNum2" Placeholder="Ingrese un número"
                Keyboard="Numeric"></Entry>
-        <Button x:Name="btnSumar" Text="Sumar" Clicked="btnSumar_Clicked"/>
-        <Button x:Name="btnRestar" Text="Restar" Clicked="btnRestar_Clicked"></Button>
-        <Button x:Name="btnMultiplicar" Text="Multiplicar" ClassId="btnSumar" Clicked="btnMultiplicar_Clicked"/>
-        <Button x:Name="btnDividir" Text="Dividir" ClassId="btnDividir" Clicked="btnDividir_Clicked"/>
+        <Button x:Name="btnSumar" Text="Sumar" Clicked="btnSumar_Clicked" BackgroundColor="#E9F7EF" />
+        <Button x:Name="btnRestar" Text="Restar" Clicked="btnRestar_Clicked" BackgroundColor="#AED6F1"></Button>
+        <Button x:Name="btnMultiplicar" Text="Multiplicar" ClassId="btnSumar" Clicked="btnMultiplicar_Clicked" Background="#FDF2E9"/>
+        <Button x:Name="btnDividir" Text="Dividir" ClassId="btnDividir" Clicked="btnDividir_Clicked" BackgroundColor="#F2F4F4"/>
 
     </StackLayout>
 
